@@ -1,0 +1,40 @@
+.progess-bar{
+    max-width: 400px!important;
+}
+footer{
+    margin-top: 3px;
+}
+.media-center img{
+    width:12rem!important;
+    height: auto;
+    margin-top: 5px;
+}
+.play{
+  min-height: 8rem!important;
+  text-align: center;
+}
+.played h4{
+    padding-top: 1em;
+}
+.control_audio{
+    text-align: center!important;
+    padding-top: 1em;
+}
+#bar{
+    display: block!important;
+     padding-top: 4em!important;
+}
+.content{
+    background: url("http://www.imageif.com/images/background-gray-background-kindle-pics.jpg") no-repeat!important;
+    border: 1px lightgray solid;
+    border-radius: 10px;
+
+}
+.mute-p{
+    display: none;
+    font-style: italic;
+    color: green;
+}
+.well{
+    margin-top: 5px;
+}

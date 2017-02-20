@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Person List version jQuery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/personList.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<script>
+$(document).ready(function(){
+    $("#add").click(function(){
+        $("#p_list").append( $("#nameField").val() + "<br>");
+    });
+    $("#empty").click(function(){
+        $("#p_list").empty();
+    });
+});
+</script>
+<body>
+    <h1>Person List version jQuery</h1>   
+    <h5><span class="glyphicon glyphicon-time"></span> Tram Nguyen, February 14, 2017</h5>
+    <p></p>
+        <p><strong>Enter name: </strong></p>
+        <div id="personList">
+        <input id="nameField" type="text" placeholder="Name"></input>
+        <button class="btn btn-success" id="add">Add</button>
+        <button class="btn btn-info" id="empty">Clear</button>
+        </div>
+        <p id="p_list"></p>
+<footer>
+    <h6 id="left"><a href="index_lab5.html">&#8666; Back to Lab 5</a></h6>
+    <h6 id="right"><a href="#">&#8667; Back to Home</a></h6>
+</footer>
+  </body>
+</html>

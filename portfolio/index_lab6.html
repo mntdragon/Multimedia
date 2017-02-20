@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery.getJSON demo</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flickr.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+     <div class="jumbotron">
+    <div class="jcontainer">
+      <h1>Flickr wall</h1>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2 col-md-2 "></div>
+      <div class="col-sm-8 col-md-8 ">
+        <div class="content-search">
+          <input type="text" id="input" name="input">
+          <button type="submit" class="btns btn-5" onclick="searchTag()"><b>SHOW</b></button> 
+          </div>
+        <div id="images"></div>
+      </div>
+      <div class="col-sm-2 col-md-2 "></div>
+    </div>
+  </div>
+  <script>
+    var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+
+    function searchTag() {
+      var search_tag = $('#input').val();
+      $("#images").empty();
+      (function () {
+        $.getJSON(flickerAPI, {
+          tags: search_tag,
+          tagmode: "any",
+          format: "json"
+        })
+          .done(function (data) {
+            $.each(data.items, function (i, item) {
+              $("<img>").attr("src", item.media.m).appendTo("#images");
+              if (i === 20) {
+                return false;
+              }
+            });
+          });
+      })();
+    }
+  </script>
+
+</body>

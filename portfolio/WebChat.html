@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/chatting.css">
+    <script src="js/chatthing.js"></script>
+    <title>Simple Web Chat</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="well">
+    <div class="media">
+  <div class="media-left">
+    <img src="https://materiell.com/wp-content/uploads/2015/03/john-small.png" class="media-object" style="width:60px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><b>Author</b></h4>
+    <p> Welcome, here I use chatting.js which run the ws://obscure-waters-98157.herokuapp.com.</p>
+  </div>
+</div>
+</div>
+<div id="mess-table">
+    <div class="mess-show">
+      <p id="chat"></p>
+    </div>
+    <br>  
+    <input type="text" id="data">
+    <input type="button" value="send" onclick="Message_Send()" class="btn btn-info">
+    
+</div>
+
+  </body>
+</html>

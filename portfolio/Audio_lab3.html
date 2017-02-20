@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>A simple web radio (stream) player</title>
+		<meta name="description" content="RWD" />
+		<meta name="keywords" content="Javascript APIs, responsive, web sockets, audio, flipboard layout, sidebar menu" />
+		<meta name="author" content="tram" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/Audio_lab3.css" />
+	</head>
+	<body>
+          
+        <div class="container">
+            <div class="well">
+                <div class="media">
+                    <div class="media-left">
+                    <img src="http://overseaselectronicsjobs.com/wp-content/uploads/2014/11/avatar.png" class="media-object" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><b>Author</b></h4>
+                        <p> Welcome, here I created a simple autio with play, pause, mute and volume up down button with the volume progress bar below.</p>
+                    </div>
+                </div>
+            </div>
+           <div class="content">
+            <div class="media play">
+                    <div class="media-center ">
+                    <img src="https://s-media-cache-ak0.pinimg.com/originals/a2/99/91/a29991ceb05921747ff0635636ce3cbc.gif" class="img-rounded">
+                    </div>
+                    <div class="media-body played">
+                        <h4 class="media-heading"><b>Finnish Artist</b></h4>
+                        <br>
+                    </div>
+                </div>
+        <audio src="http://stream.basso.fi:8000/stream" preload="true" id="audio">
+            Your browser does not support the audio element
+        </audio>
+        <div class="load_audio"></div>
+	        <div class="control_audio">
+		        <button id="play" onclick="playMusic()" class="btn btn-primary">Play</button>
+					<button onclick="plusVolume()" class="btn btn-success">Vol+ </button> 
+                    <button onclick="minusVolume()" class="btn btn-success">Vol- </button> 
+                    <button onclick="mute()" class="btn btn--default">Mute</button>
+		            <button id="pause" onclick="pauseMusic()" class="btn btn-danger">Pause</button>
+                    
+	        </div><br>
+             <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped"class="progress-bar .progress-bar-striped" id="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                </div>
+            </div> </div>
+           <footer><a href="index_lab3.html" style="color: green">Return back to Lab 3 page</a></footer> 
+        </div>
+         <script src="js/Audio_lab3.js"></script>
+	</body>
+    
+</html>
+

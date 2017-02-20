@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AJAX JSON</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+	
+</head>
+<body>
+	<H1>PERSON LIST</H1>
+	<button id="click" onclick="click()"> Get Data </button>
+	<script>
+$(document).ready(function () {
+	$("#click").click(function()
+	{ 
+		$.ajax({
+		  url: "https://imp-portfolio-demonstration.herokuapp.com/json/persons.jsonp",
+		  dataType: "jsonp",
+		  jsonpCallback: "jsonCallback"
+		});
+	});
+});
+		function jsonCallback(json){
+		  loadData(json);
+		}
+
+		function loadData(json){
+			console.log(json);
+			for(var i = 0; i < json.length; i++){
+				$('div').append(json[i].name + " info: " + "<br>Age: " + json[i].age + "<br>Phone: " + json[i].phone + "<br>Email: " + json[i].email + "<br>Address: " + json[i].address + "<hr>");
+			}
+		}
+	
+	</script>
+	<div id="showData"></div>
+</body>
+</html>

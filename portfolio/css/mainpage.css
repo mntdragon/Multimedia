@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+body {margin: 0;}
+/*menu*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left!important;}
+
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.topnav a.link{
+    margin-top: 5px;
+}
+ul.topnav a.link:hover {background-color:#696969;
+  letter-spacing: .1em;
+  }
+
+
+ul.topnav li.left {float: left;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #e0dfdc;
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+
+}
+
+.team_member {
+  width:100%;
+  position:relative;
+  overflow:hidden;
+  height:25em;
+}
+
+.info {
+  height:100%;
+}
+
+.info img {
+  width:100%;
+  transition: all .4s ease-out .1s;
+   -moz-transition: all .4s ease-out .1s;
+   -webkit-transition: all .4s ease-out .1s;
+}
+
+.info h5 {
+  padding: 10px 10px 0 0;
+  margin: 0 0 10px 3px;
+  line-height: 1em;
+  opacity: 1;
+  transition: all .2s ease-out .1s;
+   -moz-transition: all .2s ease-out .1s;
+   -webkit-transition: all .2s ease-out .1s;
+  font-size: 1.125em;
+}
+
+.info h6 {
+  padding:0 10px 0 0;
+  font-size:12px;
+  margin:0 0 0 3px;
+  line-height:1em;
+  text-transform:uppercase;
+  color:#999;
+  opacity:1;
+  transition: all .2s ease-out .1s;
+   -moz-transition: all .2s ease-out .1s;
+   -webkit-transition: all .2s ease-out .1s;
+}
+
+.info_reveal {
+  height:100%; 
+  transition: all .3s ease-in 0s;
+   -moz-transition: all .3s ease-in 0s;
+   -webkit-transition: all .23s ease-in 0s;
+  position:absolute;
+  width:100%;
+  left:0;
+  top:-100%;
+  background: rgba(19,18,19,0.9);
+}
+
+.info_reveal h6 {
+  padding: 20px 8px 5px 8px;
+  line-height: 1.1em;
+		margin-bottom: 20px;
+		color: #fff;
+  font-size: 1em;
+}
+
+.info_reveal p {
+  padding:0 8px;
+  font-size:15px;
+  line-height: 1.2em;
+  color: #073a2e;
+  font-weight:400;  
+}
+
+.info_reveal a {
+  color: #073a2e;
+		word-break: break-word;
+  text-decoration:none;
+}
+
+.info_reveal a:hover {
+  color: #073a2e;
+}
+
+
+.responsive_grid {
+ display:block;
+ margin:0;
+ padding:0;
+ list-style:none;
+}
+
+.responsive_grid li {
+ cursor:pointer;
+ width: 16.66667%;
+ padding: 0 10px 10px;
+ display:block;
+ height:auto;
+ float:left;
+ margin-bottom:10px;
+}
+
+.responsive_grid li:hover .info_reveal,
+.responsive_grid li:focus .info_reveal{
+ left: 0;
+ top:0;
+ transition: all .3s ease-out .1s;
+   -moz-transition: all .3s ease-out .1s;
+   -webkit-transition: all .3s ease-out .1s;
+}
+
+.responsive_grid li:hover .info img,
+.responsive_grid li:focus .info img {
+  width:210%;
+  margin-left:-50%;
+  transition: all .4s ease-in 0s;
+   -moz-transition: all .4s ease-in 0s;
+   -webkit-transition: all .4s ease-in 0s;
+}
+
+.responsive_grid li:hover .info h5,
+.responsive_grid li:focus .info h5,
+.responsive_grid li:hover .info h6,
+.responsive_grid li:focus .info h6 {
+  opacity: 0;
+  transition: opacity .2s linear 0s;
+   -moz-transition: opacity .2s linear 0s;
+   -webkit-transition: opacity .2s linear 0s;
+}
+
+
+
+
+/*Just some styles for Codepen preview*/
+.content {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 50px 100px;
+  max-width: 80em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h5, h6, .info_reveal a {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+
+  ul.topnav li.right, 
+    ul.topnav li {float: none;}
+
+    .col-m-3 {width: 25%;}
+
+    .col-m-6 {width: 50%;}
+
+    .col-m-9 {width: 75%;}
+  
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+ 
+    .col-3 {width: 25%;}
+    
+    .col-6 {width: 50%;}
+    
+    .col-9 {width: 75%;}
+
+    .col-12 {width: 100%;}
+}

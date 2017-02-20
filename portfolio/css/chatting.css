@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 479px){
+body{
+  background-color: rebeccapurple;
+  }
+}
+@media screen and (min-width: 480px) and (max-width:800px){
+body{
+  background-color: greenyellow;
+  }
+}
+
+#mess-table{
+  max-width: 70%;
+  height: 400px;
+  border: 2px solid #fff;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.mess-show{
+  max-width: 90%;
+  height: 400px;
+  background-color: #d3d3d3;
+  margin-left: 1%;
+  overflow-y: scroll;
+}
+#chat{
+  color: #1e90ff;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>A simple draw application</title>
+		<meta name="description" content="RWD" />
+		<meta name="keywords" content="Javascript APIs, responsive, canvas, flipboard layout, sidebar menu" />
+		<meta name="author" content="tram" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+	</head>
+	<body>
+        <div class="container">
+        <canvas id="drawingCanvas" style="background-color: #d3d3d3" width="578" height="300">
+	    </canvas>
+        <h3>Action</h3>
+        <button onclick="clearCanvas()" class="btn btn-primary btn-lg">Clear</button>
+            <script src="js/draw_application.js"></script>
+        <h3>Shape</h3>
+        <button onclick="setDrawMode(line)" class="btn btn-warning btn-lg">Line</button>
+        <button onclick="setDrawMode(rectangle)" class="btn btn-success btn-lg">Rectangle</button>
+        
+        </div>
+	</body>
+</html>

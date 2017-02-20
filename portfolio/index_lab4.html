@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Multimedia</title>
+		<meta name="description" content="RWD" />
+		<meta name="keywords" content="Javascript APIs, responsive, canvas, flipboard layout, sidebar menu" />
+		<meta name="author" content="tram" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		
+		<script src="js/modernizr.custom.79639.js"></script>
+	</head>
+	<body>
+		<div id="container" class="container">	
+
+			<div class="menu-panel">
+				<h3>Lab 4</h3>
+				<ul id="menu-toc" class="menu-toc">
+					<li class="menu-toc-current"><a href="#item1">Very simple draw application</a></li>
+					<li><a href="#item2">Simple game</a></li>
+				</ul>
+				<div>
+					<a href="index_lab3.html">Return to Lab 3 Page</a>
+					<a href="index_lab5.html">Run to Lab 5 Page</a>
+					<a href="index.html">Back to Home Page</a>
+				</div>
+			</div>
+
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller">
+								<h2>Very simple draw application</h2>
+								<p>REQUIREMENT: <br>
+                                Create a simple drawing application using html5 canvas element and Javascript.<br><br>
+                                User should be able to draw lines with mouse presses. When mouse button is pressed
+                                down, start point of line is saved and, when mouse button is released line will be drawn
+                                between start point (mouse down) and end point ( mouse up)</p><br>
+                                <hr>
+								<br>
+								<p class = "GotoLink"><b><a href="draw_application.html">&#8608; Go to my work here - A Simple Drawing app</a></b></p>
+								<p class = "GotoLink"><b><a href="draw_pen.html">&#8608; Go to my work here - A Pen Drawing app</a></b></p>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item2">
+						<div class="content">
+							<div class="scroller">
+								<h2>Simple game </h2>
+								<p>REQUIREMENT: <br><br>
+								Create a simple speed game using html5 canvas and Javascript.
+                                In the game player has 10 seconds of time to click (or touch) as many targets as possible.
+                                When player hits one target, another target’s position is randomly generated. </p>
+								<hr><br>
+								<p class = "GotoLink"><b><a href="simpleGameCanvas.html">&#8608; Go to my work here</a></b></p>
+							</div>
+						</div>
+					</div>	
+
+					</div>	
+				<nav>
+					<span id="bb-nav-prev">&larr;</span>
+					<span id="bb-nav-next">&rarr;</span>
+				</nav>
+
+				<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+			</div>
+				
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
+	</body>
+</html>

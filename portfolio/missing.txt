@@ -1,0 +1,4 @@
+lab 5 more jquery
+lab 3/2 local storage example can chay server de check code 
+lab 3/4 not yet
+lab 6 not yet

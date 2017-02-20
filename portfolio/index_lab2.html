@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Multimedia</title>
+		<meta name="description" content="RWD" />
+		<meta name="keywords" content="jquery plugin, responsive, flipboard layout, sidebar menu" />
+		<meta name="author" content="tram" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/image.css" />
+		<script src="js/modernizr.custom.79639.js"></script>
+	</head>
+	<body>
+		<div id="container" class="container">	
+
+			<div class="menu-panel">
+				<h3>Lab 2</h3>
+				<ul id="menu-toc" class="menu-toc">
+					<li class="menu-toc-current"><a href="#item1">RWD</a></li>
+					<li><a href="#item2">RWD Examples</a></li>
+					<li><a href="#item3">RWD in practice</a></li>
+					<li><a href="#item4">Adding stuff</a></li>
+					<li><a href="#item5">Responsive person list</a></li>
+				</ul>
+				<div>
+					<a href="index_lab1.html">Return to Lab 1 Page</a>
+					<a href="index_lab3.html">Go to Lab 3 Page</a>
+					<a href="index.html">Back to Home Page</a>
+				</div>
+			</div>
+
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller">
+								<h2>RWD</h2>
+								<h4>Definition</h4>
+								<p>Responsive web design (RWD) is one of the trendiest technology buzz words in web
+								   development. The terms was originally introduced in Ethan Marcotte’s A List Apart article.</p>
+								<br><br>
+								<h4>What is the purpose of the RWD? Why it is used? How things are done
+								before RWD? What is the difference?</h4>
+								<p>Responsive web design is likely inheritance of Responsive architecture. Responsive Web is a unique web version can run on all devices such as PCs, smartphones, or tablets. There are more and more devices these days, using website on portable devices process is growing extremely quick, the demand for a mobile version of the website is growing in parallel. The RWD has met the needs for that demand which satisfy many sizes interfaces on different devices. It displays the fullscreen without broken interface or some elements in some positions are hidden or no need to zoom in the screen to see on any devices.<br> Before RWD, people have to build different versions for different devices with different screen sizes. Therefore, there would be different URL and HTML for mobile devices, it would not be easy and convenient for people to share the links and interact with the distinct sites for mobile. The old version website, images would be easiy distortion and break the structure of the site, also the speed of loading page would be pretty slow. Moreover, with RWD, people can save more time and cost for developing website due to its responsiveness and optimization. Stable quality website and easily adaptable to user needs. This helps website become more professional and have the opportunity to interact with a broader audience. </p>
+								<br><br>
+								<h4>How css media queries can help you building responsive web sites?</h4>		
+								<p>Media queries are the key to help us be able to write CSS for responsive websites wich is a new techniques in CSS3. <br><br>
+								<code>@media not|only mediatype and (media feature) {CSS-Code;}</code><br><br>
+								In here, media types are print, screen and all. Media features are min-width, min-height, aspect-ratio, orientation, color-index and etc. CSS media queries has princible which is used through the screen size parameters declared via @media. With this, people can segment their css into many different parts corresponding to the size of the device types. For instance, we have CSS code for iPhone 4:<br>
+								<code>@media only screen <br>
+									  and (min-device-width: 320px) <br>
+									  and (max-device-width: 480px)<br>
+									  and (-webkit-min-device-pixel-ratio: 2) {} <br><br></code>
+								With <kbd>min-device-width</kbd>, <kbd>max-device-width</kbd> are the min and max width of device.
+								<kbd>-webkit-min-device-pixel-ratio</kbd> minimum ratio between the width and height of the device in pixel for Safari. 
+									</p>
+								<br><br>
+								<h4>Why to use em (font) based sizing for example margins?</h4>
+								<p>1em equal to the current font size, 2em = 2 times the current font size. Em is a relative measrure in website as percentage which based on the value of the font-size property. 'Em' is a very useful unit in CSS, especially in the case of users who use zoom to enlarge the text in the browser, the units will stretch out  in proportion of the letter. Em is typically used for the elasticity content while zooming. For example margins, to generate space around elements, margin should be optimized and responsive to the website screen, if we use em, element betweens margins would always be symmetric, not cramped anymore, ensure scalable design. It is better to control when people resize the screen. </p>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item2">
+						<div class="content">
+							<div class="scroller">
+								<h2>RWD Examples</h2>
+								<p>Source: <b><a href="https://www.bostonglobe.com/" style="color:green;">https://www.bostonglobe.com/</a></b></p>
+								<div class="img">
+								<img src="img/boston.PNG" alt="bostonglobe"></div>
+									<br><br>
+								<p>The page bostonglobe above is a responsive website which is responsive to many size of device's screens. The interface is still kept good and the structure of website seems not to be broken.
+								Galazy S5: 360 x 640, Ipad Pro: 1024 x 1366. </p>
+									<br><br>
+								<p>Source: <b><a href="https://www.futurelearn.com/" style="color:green;">https://www.futurelearn.com/</a></b></p>	
+								   <div class="img">
+								<img src="img/futurelearn.PNG" alt="Future Learn"></div>
+									<br><br>
+								<p>The future Larn has clean and clear responsive interface design. The images and text are scaled well in different screen sizes. Galazy S5: 360 x 640, Kindle Fire: 1600 x 2560, Nexus 10: 800 x 1280. </p>
+								   <br><br>
+								<p>Source: <b><a href="http://www.bbc.com/" style="color:green;">http://www.bbc.com/</a></b></p>	
+								   <div class="img">
+								<img src="img/bbc.PNG" alt="BBC"> <br> <img src="img/bbc_mobile.PNG" alt="BBC"></div>
+									<br><br>
+								<p>The responsive website helps the BBC can be read on any device, from phones to tablets of all kinds of main brands. The minimalist design helps site images presented beautifully with bright content.</p>
+
+								
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item3">
+						<div class="content">
+							<div class="scroller">
+								<h2>RWD in practice</h2>
+								<p>REQUIREMENT: <br><br>
+								Create a simple responsive web page where nothing is defined as pixels. <br><br>
+								Use CSS-reset, and remember to follow coding conventions. Styles must be stored in separate .css files.
+								<br><br>
+								After you have done the basic layout, how could you prevent user zooming the site on mobile?</p>
+								<hr><br>
+								<p class = "GotoLink"><b><a href="simple_responsive.html">&#8608; Go to my work here</a></b></p>
+							</div>
+						</div>
+					</div>	
+
+						<div class="bb-item" id="item4">
+						<div class="content">
+							<div class="scroller">
+								<h2>Adding stuff</h2>
+								<p>REQUIREMENT: <br><br>
+								<br>
+								<br>
+								a. Create a copy of previous task.<br>
+								b. Add a menu to it. Menu should be on the left side of the screen on wide screen, but
+								on the top on mobile portrait screen. <br>
+								c. HTML5 specification introduces new semantic elements. One of them is a <kbd>&lt;figure&gt;</kbd>
+								element. Can you say why you should use it in addition to standard <kbd>&lt;img&gt;</kbd> elements?<br><br></p>
+								<p>
+								Tag &lt;figure&gt; identify relevant content coherent with each other, such as images, diagrams, code, video, iframe...Tags used to represent a block of images along with descriptive. Figure tag unlimited amount of images<br>
+								<code>&lt;img src="user/image" alt="this is A image" /&gt; &lt;p&gt;Pham Huong image &lt;/p&gt;</code><br></p>
+								<p>
+								This situation, &lt;img&gt; tag in &lt;p&gt; tag, it is hard to combine the note/explanation with the image above. With the &lt;figure&gt; in HTML5 can solve this problem with &lt;figure&gt; and &lt;figurecaption&gt;.<br>  
+								d. Add few figure elements to previous assignment. Images should scale keeping their aspect ratio based on the width of the document. <br><br>
+								</p>
+											
+								<hr><br>
+								<p class = "GotoLink"><b><a href="simple_responsive_5.html">&#8608; Go to my work here</a></b></p>
+							</div>
+						</div>
+					</div>
+
+						<div class="bb-item" id="item5">
+						<div class="content">
+							<div class="scroller">
+								<h2>Responsive person list</h2>
+								<p>
+									REQUIREMENT:
+									<br><br>
+									Create a copy of last week’s person list project. Make it responsive!
+								</p>
+								<hr><br>
+								<p class = "GotoLink"><b><a href="personList_lab2.html">&#8608; Go to my work here</a></b></p>
+							</div>
+							</div>
+						</div>
+					</div>	
+				<nav>
+					<span id="bb-nav-prev">&larr;</span>
+					<span id="bb-nav-next">&rarr;</span>
+				</nav>
+
+				<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+			</div>
+				
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
+	</body>
+</html>

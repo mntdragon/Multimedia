@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport">
+        <title>Very simple draw application </title>
+    <script type="text/javascript">
+        var can, ctx, canX, canY, mouseIsDown = 0;
+ 
+        function init() {
+            can = document.getElementById("can");
+            ctx = can.getContext("2d");
+ 
+            can.addEventListener("mousedown", mouseDown, false);
+            can.addEventListener("mousemove", mouseXY, false);
+
+            document.body.addEventListener("mouseup", mouseUp, false);
+
+        }
+ 
+        function mouseUp() {
+            mouseIsDown = 0;
+            mouseXY();
+        }
+ 
+ 
+        function mouseDown() {
+            mouseIsDown = 1;
+            mouseXY();
+        }
+ 
+ 
+        function mouseXY(e) {
+            if (!e)
+                var e = event;
+            canX = e.pageX - can.offsetLeft;
+            canY = e.pageY - can.offsetTop;
+            showPos();
+        }
+ 
+
+ 
+        function showPos() {
+            ctx = can.getContext('2d');
+            ctx.fillStyle = "rgb(64,255,64)";
+            // plot cursor
+            ctx.fillStyle = "white";
+            ctx.lineTo(canX, canY);
+        }
+    </script>
+ 
+</head>
+<body onload="init()">
+    <canvas id="can" height="200" width="300" style="background-color:black">
+    </canvas>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+* {
+    box-sizing: border-box;
+}
+body{
+	background-color: #4CAF50;
+	margin:1em auto;
+	font-family: 'Arvo', serif;
+
+}
+
+h2{
+	font-size: 1.5em;
+}
+h1{
+	font-size: 2em;
+}
+h5{
+	font-style: italic;
+}
+
+#Welcome{
+	background-color: #cad1c4;
+}
+
+#content{
+	padding:10px;
+	color: #ffffff; 
+	
+}

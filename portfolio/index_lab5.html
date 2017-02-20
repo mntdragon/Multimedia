@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Multimedia</title>
+		<meta name="description" content="RWD" />
+		<meta name="keywords" content="Javascript APIs, responsive, JSON, JSONP, flipboard layout, sidebar menu" />
+		<meta name="author" content="tram" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		
+		<script src="js/modernizr.custom.79639.js"></script>
+	</head>
+	<body>
+		<div id="container" class="container">	
+
+			<div class="menu-panel">
+				<h3>Lab 2</h3>
+				<ul id="menu-toc" class="menu-toc">
+					<li class="menu-toc-current"><a href="#item1">Get familiar with jQuery</a></li>
+					<li><a href="#item2">More jQuery</a></li>
+					<li><a href="#item3">Ajax</a></li>
+				</ul>
+				<div>
+					<a href="index_lab4.html">Return to Lab 4 Page</a>
+					<a href="index_lab6.html">Run to Lab 6 Page</a>
+					<a href="index.html">Back to Home Page</a>
+				</div>
+			</div>
+
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller">
+								<h2>Getting familiar with jQuery</h2>
+								<p>Read this article about jQuery: <a href="https://en.wikipedia.org/wiki/JQuery" style="color:green">JQUERY</a> . See also these examples <a href="http://learn.jquery.com/about-jquery/how-jquery-works/"  style="color:green">HOW JQUERY WORKS</a></p>
+								
+								<p> Based on the article answer to following questions</p><br>
+								<h4>1. What you can do with the jQuery?</h4><br>
+								<p>jQuery helps write javascript faster with simpler syntax. It is as a huge libriary supporting many programming language. jQuery improves application performance, helps implement UI without multiple lines of code, create nice effects for websites, as animation. We can run Jquery when load page or page has loaded. </p><br>
+								<h4>2. How it can help you as web developer?</h4>
+								<p>DOM manipulation, with jQuery, user easy choodse DOM elements to traverse more conveniently as using to edit CSS, fix or change content. Instead of concerning with Event Handler in HTML code, jQuery solve various event pretty cool, this help the interaction with user better. Changing web interface format by being available display in most of current brownsers. jQuery could change class or CSS definition which applied into any HTML element, even the page has been loaded successfully. Webdevelopers cann write javascript code simpler, for instance, writing loop or control complex nested arrays. Less write do more. Using jQuery make web developer save more time.  Besides, AJAX in jQuery is a powerful advantage. </p><br>
+								<h4>3. If you think our earlier participant list app, in what kind of issues you could use
+								jQuery?</h4><br>
+								<p>loading data and make some effect  as animation. </p><br>
+								<h4>4. What are CDNs? What kind of benefits you get if you use them?</h4><br>
+								<p>CDN is content delivery network, which can be understood storing data temporarily due to each area. It is best when web server is far from user, huge ammoount of access take much bandwidths or in many different country, or using Load Balacning FailOver. The most 3 popular CDNS: Google, Miscrosoft, jQuery. Benefits: save bandwidth ans costs, load quickly base on geography position. </p>
+								<br><br>
+								
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item2">
+						<div class="content">
+							<div class="scroller">
+								<h2>More jQuery </h2>
+								<p>Read carefully through this jQuery core tutorial: <a href="http://learn.jquery.com/using-jquery-core/" style="color: green">Using jQuery core</a> (Read all sub chapters and test (code) things that are mentioned in the tutorial.</p>
+								<p>REQUIREMENT: <br><br>
+								<hp>Create a copy of our participant list app and modify it to use jQuery when applicable. </p>
+								<hr><br>
+								<p class = "GotoLink"><b><a href="personList_lab5.html">&#8608; Go to my work here</a></b></p>
+							</div>
+						</div>
+					</div>	
+					<div class="bb-item" id="item3">
+						<div class="content">
+							<div class="scroller">
+								<h2>Ajax</h2>
+								<p>REQUIREMENT: <br><br>
+								<p>Read this Ajax info: <a href="https://en.wikipedia.org/wiki/Ajax_(programming)" style="color: green">AJAX</a>. Read also this info
+								about <a href="https://msdn.microsoft.com/en-us/library/bb299886.aspx" style="color: green">JSON. </a>
+								Create a simple application that loads this <a href="https://imp-portfoliodemonstration.herokuapp.com/json/persons.json" style="color: pink"> JSON file </a>using AJAX, parses it and shows a list of persons (from JSON) and their email addresses as mailto-link.</p>
+								<hr><br>
+								<p class = "GotoLink"><b><a href="person_useJSON.html">&#8608; Go to my work here</a></b></p>
+							</div>
+						</div>
+					</div>	
+
+					</div>	
+				<nav>
+					<span id="bb-nav-prev">&larr;</span>
+					<span id="bb-nav-next">&rarr;</span>
+				</nav>
+
+				<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+			</div>
+				
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
+	</body>
+</html>

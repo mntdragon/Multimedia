@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Multimedia</title>
+		<meta name="description" content="Lab1" />
+		<meta name="keywords" content="lab1, html5, html, cding conventions, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
+		<meta name="author" content="tram" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script src="js/modernizr.custom.79639.js"></script>
+	</head>
+	<body>
+		<div id="container" class="container">	
+
+			<div class="menu-panel">
+				<h3>Lab 1</h3>
+				<ul id="menu-toc" class="menu-toc">
+					<li class="menu-toc-current"><a href="#item1">Definitions</a></li>
+					<li><a href="#item2">Coding conventions</a></li>
+					<li><a href="#item3">HTML5</a></li>
+					<li><a href="#item4">Developer Tools</a></li>
+					<li><a href="#item5">Dynamic HTML</a></li>
+				</ul>
+				<div>
+					<a href="index_lab2.html">Go to Lab 2 Page</a>
+					<a href="index.html">Back to Home Page</a>
+				</div>
+			</div>
+
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller">
+								<h2>Definitions</h2>
+								<h4>HTML</h4>
+								<p>HyperText Markup Language, which is used for define structure,format layout 
+									and related attributes shown on the brownser. It is as the backbone of the 
+									website. Not a programming language. Using tag annd attributes to control 
+									form and content of website page, insert objects as video, image, 
+									audio clip, etc into HTML, publish and access online sources, documents 
+									or info by using inserted links in HTML documents. HTML document has 3 
+									basic parts: html, head and body tag. HTML uses a set of tags to describe 
+									a web page. Each tag describre different info.</p>
+								<br><br>
+								<h4>CSS</h4>
+								<p>Cascading Style Sheets, which is used to format a certain part of HTML, 
+									help the code of website be more compact and easy to edit. A language for 
+									decorating content of website. CSS can change default attributes of 
+									html tags. CSS helps to change the style of a Web page simpler and less 
+									time consuming. When HTML has CSS as person has beautiful clothes.</p>
+								<br><br>
+								<h4>Javascript</h4>		
+								<p>A programming language, embedded or insert directly in HTMl file, that help 
+									website be more interactive, responsive, vivid. It can be also embedded in 
+									Java. While making website,people usually use a library source for Js 
+									as jQuery fo rexample. Js language has many features: object oriented, 
+									simple, ...  One of the most important feature is the creative ability to 
+									create and use objects to develop applications more easily. Advantages of 
+									Javascript are: less server interaction, response quickly to customer 
+									or user, increasing the interactive ability, plentiful interfaces and 
+									templates, checking data validity, making and changing dynamic content.
+									</p>
+								<br><br>
+								<h4>HTTP</h4>	
+								<p>Hypertext Transfer Protocol, a way to transmit data through internet, while 
+									loading website, using the HTTP protocol to send and receive data. HTTP 
+									can be seen everywhere. HTTP works based on the Client-Server model. 
+									HTTP helps enable the transmission of files from a Web server to a Web 
+									browser so users can view a Web page presenting in web brownser. </p>
+								<br><br>
+								<h4>HTML5</h4>
+								<p>A new better version of HTML, displays for WWW. HTML5 has added new features 
+									to build web applications much easier. Example: more color and support curve, 
+									rounded corner, ... HTML5 will allow you to watch videos without using plugin 
+									like Flash or Silverlight. With HTML5, website becomes more visible, more 
+									attractive and make everything becomes closer to what the designer imagined 
+									in mind. </p>
+								<br><br>
+								<h4>DHTML</h4>		
+								<p>A combination of HTML, CSS, DOM and Javascript. It is aas an ecpanded version 
+								   of HTML, to increase presenting content effects and other objects. 
+								   DHTML's structure has 4 parts: DOM, Script, CSS, XHTML. DHTML makes website 
+								   dynamic. For instances, paragraph can be changed posion, color or style,
+								   respond well the impact of user to website. There are some features in DHTML: 
+								   change tag and property(most common feature), real-time positioning, 
+								   dynamic fonts and data binding.</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item2">
+						<div class="content">
+							<div class="scroller">
+								<h2>Coding conventions</h2>
+								<p>A collection of standard rules for coding in a project. This makes long codes
+									are clear,durable, consistent, flexible and easy to read, understand, maintain 
+									and manage.Especially for working in a team, coding conventions help the 
+									process running smoothly. Each member can use the products of other members 
+									when they have detailed design documents. Team would easily predict or 
+									understand your code and fit the others well. This could save time-consumong 
+									not only for team but also for your own. 
+								</p>
+									<br><br>
+								<p>Some kinds of conventions which are applied while I am writing codes:
+									<br><br>
+								   - Naming convention: camelCase(<kbd>productPrice</kbd>, <kbd>animalSmall</kbd>) which using
+								   lowecase for the first letter of the word and uppercase for the first letter
+								   of the next word; PascalCase(<kbd>ProductPrice</kbd>) which using uppercase eery first 
+								   letter of each word; SnakeCase(<kbd>product_price</kbd>, <kbd>student_score</kbd>) which using
+								   lowercase for all letter, and words separated by underscores. In general, 
+								   when puting name, I usually use meaning noun or verb, avoid using the acronym
+								   and non-meaning or too common name. 	
+								   <br>
+								   - Make sure every tag has their closing one, even the optional tag.
+								   <br>
+								   - Use quotation for attribute values
+								   <br>
+								   - Use lowercase for attribute names: <kbd>&lt;section&gt;</kbd> is much better than 
+									<kbd>&lt;Section&gt;</kbd> or <kbd>&lt;SECTION&gt;</kbd>
+									<br>
+								   - Use a space before and after the operator for the clear and readibility code.
+									Except for unary operators as <code>++</code> or<code>--</code>.
+									For example: <code>this.barName = "Bonny yeu Pham Huong"</code>;  
+									<br>
+								   - Always add comments well to describe code more understandable and approachable,
+								    help I and other who read my code understand and explore more quickly. 
+									Moreover, comments is pretty good to fix and improve code. They should be 
+									written with descriptive info and what the program should be noted for 
+									reading and editing code later. 
+									<br>
+									- For style definitions, using empty line between them and a space after 
+									semicolons to make the code professional and readable. 
+									<br>
+									- Using alt attribute every time inserting image. This convention make sure
+									the engine searchs and understand what the image would like to say, its aim,
+									especially for the not showing image.
+									
+								</p>
+
+								
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item3">
+						<div class="content">
+							<div class="scroller">
+								<h2>HTML5</h2>
+								<p>REQUIREMENT: <br><br>
+								a. Create a simple HTML5 document.<br><br>
+								b. Modify previous document so that you will have an<br>
+									- external style sheet file (.css) with styles<br>
+									- external Javascript file (.js)<br><br>
+									Both of these files should be linked and used in .html file.<br><br>
+								</p>
+								<hr><br>
+								<p class = "GotoLink"><b><a href="html5_lab1.html">&#8608; Go to my work here</a></b></p>
+							</div>
+						</div>
+					</div>	
+
+						<div class="bb-item" id="item4">
+						<div class="content">
+							<div class="scroller">
+								<h2>Developer Tools</h2>
+								<p>For web developers, the web browser is the most exposed for them after only IDE. In the web brownser, there is a hidden tool which is very usefull for developer check the HTML, CSS code or debug javascript code.
+								Right-click on any website, click Inspect and you can see everything inside of that website, including source code, images and CSS design, fonts and icons and JavaScript code animations, ...
+								I usually use Google Crome and its Developing tools for studying and exploring the codes of the websites. This help saving time and improve my working efficiency.
+								<br>
+								<br>
+								How to open the Dev tool: To start you open Google Chrome, and then press the F12 key to launch it or right click, then click Inspect.
+								From the Developer Tools window, you will see these panels: 
+								<ul>
+									<li>Elements</li>
+									<li>Resources</li>
+									<li>Network</li>
+									<li>Source</li>
+									<li>Timeline</li>
+									<li>Profile</li>
+									<li>Audits</li>
+									<li>Console</li>
+								</ul>
+								</p>
+								<p>
+								You can use Ctrl + [or Ctrl +] to move between tabs controls.<br><br>
+								In Console panel you can find errors of javascript. The errors related to JavaScript (not loaded, missing closing parenthesis opened, semicolon, ...) will be displayed in this panel.
+								You can also run the javascript code directly on this panel. In the panel(or tab) Source, you can put breakpoint while debugging. You can both call debugger function in code or click the number line of code in Source panel to mark the breakpoint.
+								Moreover, you can also open the minify Javascript to reduce the transmiting size and increase website speed. By clicking the 'pretty print' in the left bottom corner, all JS code will be turned into minify and return to easy reading format, easy debugging and putting breakpoint. <brZ </p>
+								<hr><br>
+								<p class = "GotoLink"><b><a href="https://www.google.fi/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0ahUKEwibtIKw7c7RAhVPSZoKHUgfAVkQFggqMAE&url=https%3A%2F%2Fdevelopers.google.com%2Fweb%2Ftools%2Fchrome-devtools%2F&usg=AFQjCNGXeq07UNKZ-R0r8pdG27c3jzQzUQ&sig2=WlXjIcACWA8priCkmLkLgA">&#8608; Go and explore more about Chrome Dev Tool</a></b></p>
+							</div>
+						</div>
+					</div>
+
+						<div class="bb-item" id="item4">
+						<div class="content">
+							<div class="scroller">
+								<h2>Dynamic HTML</h2>
+								<p>
+									REQUIREMENT:
+									<br><br>
+									Create a simple person list wb application. With this app you should be able to list persons.
+								</p>
+								<hr><br>
+								<p class = "GotoLink"><b><a href="personList_lab1.html">&#8608; Go to my work here</a></b></p>
+								<p class = "GotoLink"><b><a href="personList_MVC.html">&#8608; Go to my work version MVC here</a></b></p>
+							</div>
+							</div>
+						</div>
+					</div>	
+				<nav>
+					<span id="bb-nav-prev">&larr;</span>
+					<span id="bb-nav-next">&rarr;</span>
+				</nav>
+
+				<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+			</div>
+				
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
+	</body>
+</html>

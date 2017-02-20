@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>A web chat client</title>
+		<meta name="description" content="RWD" />
+		<meta name="keywords" content="Javascript APIs, responsive, web sockets, flipboard layout, sidebar menu" />
+		<meta name="author" content="tram" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/WebChat.css" />
+    <script src ="js/WebChatClient.js"></script>
+    
+</head>
+<body>
+  <div class="container">
+      <div class="well">
+    <div class="media">
+  <div class="media-left">
+    <img src="https://materiell.com/wp-content/uploads/2015/03/john-small.png" class="media-object" style="width:60px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><b>Author</b></h4>
+    <p> Welcome, here I use server.js to to create WebScoket server which run through my localhost: ws://localhost:8087/, I tried to use socket.io but it is seem not working for me while testing its connection.
+      Then in cmd, run node js/server.js to run server side, next, run the Web Chat CLient application to display what you are seeing.</p>
+  </div>
+</div>
+</div>
+    <div id="start">
+      <h1>WebSocket Chat</h1><br>
+      <h3>What is your name?</h3> 
+      <input type="text" id="name" class="form-control"><br>
+      <input type="button" value="Joined the Chat" onclick="Chat_Connect();" class="btn btn-info">
+    </div>
+
+    <div id="chat_content">
+      <div id="chatBox">
+   
+      </div>
+
+      <div id="messageForm">
+        <input type="text" id="message" class="form-control"><br>
+        <input type="button" value="send" onclick="Message_Send();" class="btn btn-info">
+      </div>
+    </div>
+    
+    <footer><a href="index_lab3.html" style="color: green">Return back to Lab 3 page></a></footer>
+  </div>
+</body>
+</html>
