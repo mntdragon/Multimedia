@@ -27,8 +27,9 @@ $(document).ready(function () {
 		function loadData(json){
 			console.log(json);
 			for(var i = 0; i < json.length; i++){
-				$('div').append(json[i].name + " info: " + "<br>Age: " + json[i].age + "<br>Phone: " + json[i].phone + "<br>Email: " + json[i].email + "<br>Address: " + json[i].address + "<hr>");
-			}
+				$('div').append(json[i].name + " info: " + "<br>Age: " + json[i].age + "<br>Phone: " + json[i].phone + "<br>Email: <a href='mailto:" + json[i].email + "'>" + json[i].email + "</a>"+ "<br>Address: " + json[i].address + "<hr>");
+			
+		}
 		}
 	
 	</script>
