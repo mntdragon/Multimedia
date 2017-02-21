@@ -38,3 +38,11 @@ footer{
 .well{
     margin-top: 5px;
 }
+#divideo video{
+    width: 40em;
+    height: auto;
+}
+#divideo {
+    margin-top: 2em;
+    text-align: center;
+}

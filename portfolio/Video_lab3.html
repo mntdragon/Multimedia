@@ -10,10 +10,44 @@
 		<meta name="author" content="tram" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/Video_lab3.css" />
+		<link rel="stylesheet" type="text/css" href="css/Audio_lab3.css" />
 	</head>
 	<body>
           
-        <div class="container">
+       <div class="container">
+            <div class="well">
+                <div class="media">
+                    <div class="media-left">
+                    <img src="http://overseaselectronicsjobs.com/wp-content/uploads/2014/11/avatar.png" class="media-object" style="width:60px">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><b>Author</b></h4>
+                        <p> Welcome, here I created a simple video with play, pause, mute and volume up down button with the volume progress bar below.</p>
+                    </div>
+                </div>
+            </div>
+
+			<div class="content container-fluid">
+				<div id="divideo">
+        <video src="chuphinh_chungthanhphong.mp4" id="video" type="video/mp4">
+            Your browser does not support the audio element
+        </video>
+				</div>
+        <div class="load_audio"></div>
+	        <div class="control_audio">
+		        <button id="play" onclick="playMusic()" class="btn btn-primary">Play</button>
+					<button onclick="plusVolume()" class="btn btn-success">Vol+ </button> 
+                    <button onclick="minusVolume()" class="btn btn-success">Vol- </button> 
+                    <button onclick="mute()" class="btn btn--default">Mute</button>
+		            <button id="pause" onclick="pauseMusic()" class="btn btn-danger">Pause</button>
+                    
+	        </div><br>
+             <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped"class="progress-bar .progress-bar-striped" id="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                </div>
+            </div> </div>
+           <footer><a href="index_lab3.html" style="color: green">Return back to Lab 3 page</a></footer> 
         </div>
+         <script src="js/Video_lab3.js"></script>
 	</body>
 </html>
