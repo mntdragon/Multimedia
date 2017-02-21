@@ -196,6 +196,8 @@ h5, h6, .info_reveal a {
     .col-m-9 {width: 75%;}
   
     .col-m-12 {width: 100%;}
+
+    
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -208,4 +210,11 @@ h5, h6, .info_reveal a {
     .col-9 {width: 75%;}
 
     .col-12 {width: 100%;}
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+.content{
+      display: none;
+    }
 }
