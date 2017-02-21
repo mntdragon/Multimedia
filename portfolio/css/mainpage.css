@@ -164,7 +164,10 @@ ul.topnav li.left {float: left;
    -webkit-transition: opacity .2s linear 0s;
 }
 
-
+#footer{
+  background-color: #141414;
+  color: #eee;
+}
 
 
 /*Just some styles for Codepen preview*/
@@ -178,7 +181,9 @@ ul.topnav li.left {float: left;
 h5, h6, .info_reveal a {
   font-family: 'Open Sans Condensed', sans-serif;
 }
-
+.label{
+  border-radius: 20px!important;
+}
 [class*="col-"] {
     width: 100%;
 }
@@ -210,6 +215,10 @@ h5, h6, .info_reveal a {
     .col-9 {width: 75%;}
 
     .col-12 {width: 100%;}
+
+    .contents{
+      display: none;
+    }
 }
 @media only screen
 and (min-device-width : 320px)
